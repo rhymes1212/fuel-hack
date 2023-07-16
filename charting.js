@@ -2,6 +2,7 @@
 const apiKey = "YOUR_ALPHA_VANTAGE_API_KEY"; // replace with your API key
 
 // Fetch data from the API
+// starting with IBM as an example
 fetch(`https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol=IBM&apikey=${apiKey}`)
     .then(response => response.json())
     .then(data => {
